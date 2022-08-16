@@ -1,13 +1,14 @@
 ﻿using PickRandomCard;
 
-Console.Write("How many cards shall be drawn? ");
-string drawAmount = Console.ReadLine();
 bool wroteNumber = false;
-
-Console.WriteLine();
 
 do
 {
+    Console.Write("How many cards shall be drawn? ");
+    string drawAmount = Console.ReadLine();
+
+    Console.WriteLine();
+
     if (int.TryParse(drawAmount, out int numberOfCards))
     {
         wroteNumber = true;
@@ -34,7 +35,7 @@ do
     else
     {
         // Infinite write, fix this
-        Console.WriteLine("Please repeat your number");
+        Console.WriteLine("Please repeat your number.");
     }
 }
 while (!wroteNumber);
