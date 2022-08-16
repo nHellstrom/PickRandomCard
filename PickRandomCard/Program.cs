@@ -33,6 +33,7 @@ do
     }
     else
     {
+        // Infinite write, fix this
         Console.WriteLine("Please repeat your number");
     }
 }
